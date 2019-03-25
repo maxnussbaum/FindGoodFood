@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.4.0'
 gem 'haml-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.10'
@@ -35,6 +36,16 @@ group :development, :test do
   gem 'byebug'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.3.13'
+  gem 'rspec-rails', '3.7.2'
+  gem 'capybara', '2.4.4'
+
+end
+
+group :test do
+  
+  gem 'cucumber-rails', :require => false
+  gem 'simplecov', :require => false
+  
 end
 
 group :development do
