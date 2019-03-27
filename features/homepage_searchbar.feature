@@ -13,12 +13,14 @@ Scenario: Search by Restaurant
   And I select "Restaurant" from "search_type"
   When I press "Submit"
   Then I should be on the restaurant results page
+  Then I should see "Restaurant Results for 'Nirchi's'"
   
 Scenario: Search by Food
   When I fill in "search_bar" with "pizza"
   And I select "Food" from "search_type"
   When I press "Submit"
   Then I should be on the food results page
+  Then I should see "Food Results for 'pizza'"
 
 Scenario: Search with an empty input
   When I fill in "search_bar" with ""

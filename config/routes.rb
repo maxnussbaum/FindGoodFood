@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get 'homepage/home' => 'home'
-  get 'homepage/search' => 'search'
   get 'search' => 'homepage#search'
+  get 'results/food' => 'search#food'
+  get 'results/restaurant' => 'search#restaurant'
   root 'homepage#home'
 end
