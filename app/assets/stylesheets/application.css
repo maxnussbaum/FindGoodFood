@@ -25,7 +25,7 @@ start block*/
         font-family: Arial;
         padding: 10px;
         /*background: #f1f1f1;*/
-        background-image: url("bgdesert.jpg");
+        /*background-image: url("bgdesert.jpg");*/
       }
       
       /* Header/Blog Title */
@@ -33,7 +33,7 @@ start block*/
         padding: 30px;
         text-align: center;
         /*background: white;*/
-        background-image: url("bgdesert.jpg");
+        /*background-image: url("bgdesert.jpg");*/
       }
       
       .header h1 {

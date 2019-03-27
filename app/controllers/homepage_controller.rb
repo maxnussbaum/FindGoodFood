@@ -9,12 +9,16 @@ class HomepageController < ApplicationController
     search_type = params[:search_type] || session[:search_type]
     case search_type
     when 'food'
-      redirect_value = '/results/food'
+      redirect_value = 'food'
     when 'restaurant'
-      redirect_value = '/results/restaurant'
+      redirect_value = 'restaurant'
     end
-    redirect_value = '/' if search_bar.empty?
-    redirect_to redirect_value
+    if search_bar.empty?
+      redirect_to '/'
+    else
+      session[:search_bar] = search_bar
+      redirect_to controller: 'search', action: redirect_value, search_bar: search_bar
+    end
   end
   
 end
