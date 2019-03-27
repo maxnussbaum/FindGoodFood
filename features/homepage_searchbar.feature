@@ -6,18 +6,21 @@ Feature: test functionality of the search bar on the homepage
 
 Background:
 
-  Given
-
-  And  I am on the FindGoodFood home page
+  Given I am on the FindGoodFood home page
   
 Scenario: Search by Restaurant
-  When
-  Then
+  When I fill in "search_bar" with "Nirchi's"
+  And I select "Restaurant" from "search_type"
+  When I press "Submit"
+  Then I should be on the restaurant results page
   
 Scenario: Search by Food
-  When
-  Then
+  When I fill in "search_bar" with "pizza"
+  And I select "Food" from "search_type"
+  When I press "Submit"
+  Then I should be on the food results page
 
 Scenario: Search with an empty input
-  When
-  Then
+  When I fill in "search_bar" with ""
+  When I press "Submit"
+  Then I should be on the FindGoodFood home page
