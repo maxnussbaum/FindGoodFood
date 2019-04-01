@@ -1,0 +1,15 @@
+!!!
+%html
+  %body
+    .header
+      %h2 FindGoodFood
+    .search-container
+      %form{:action => "search", :method => 'get'} 
+        %input{:name => "search_bar", :required => true, :placeholder => "Find Good Food", :type => "text", :value => ""}/
+        %select{:name => "search_type"}
+          %option{:value => "food"} Food
+          %option{:value => "restaurant"} Restaurant
+        %input{:type => "submit", :value => "Submit"}/
+        
+        
+
