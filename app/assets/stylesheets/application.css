@@ -15,7 +15,6 @@
  */
 /*added by Himani
 start block*/
-
 :css
       * {
         box-sizing: border-box;
@@ -25,25 +24,31 @@ start block*/
         font-family: Arial;
         padding: 10px;
         /*background: #f1f1f1;*/
-        /*background-image: url("bgdesert.jpg");*/
       }
       
       /* Header/Blog Title */
       .header {
-        padding: 30px;
+        margin-top: 150px;
         text-align: center;
         /*background: white;*/
-        /*background-image: url("bgdesert.jpg");*/
+        background-image: url("bgdesert.jpg");
       }
       
-      .header h1 {
-        font-size: 50px;
-        font-family: Algerian;
+      .header h2 {
+        font-size: 80px;
+        margin-bottom: 0;
+        font-family: Pacifico;
+        color: Blue;
+      }
+      
+      .header p {
+        font-size: 20px;
+        font-family: Arial;
       }
       
       form {
-        width: 50%;
-        margin: auto;
+        width: 100%;
+        margin: 0 auto;
       }
 
       .topnav {
@@ -64,15 +69,28 @@ start block*/
       .topnav {
         float: none;
       }
-      
-      .topnav input[type=text] {
+      .search-container select{
         padding: 6px;
         margin-top: 8px;
         font-size: 17px;
         border: 1px solid #ccc;
+        width: 10%;
+        height: 45px;
+        text-align: center;
+        margin-right: 10px;
       }
       
-      .topnav .search-container button {
+      .search-container input[type=text] {
+        padding: 6px;
+        /*margin-top: 30px;*/
+        font-size: 30px;
+        border: 1px solid #ccc;
+        width: 40%;
+        height: 45px;
+        margin-bottom: 20px;
+      }
+      
+      .search-container input[type=submit] {
         float: none;
         padding: 6px 10px;
         margin-top: 8px;
@@ -81,47 +99,22 @@ start block*/
         font-size: 17px;
         border:1px solid #ccc;
         cursor: pointer;
+        width: 10%;
+        height: 45px;
+        text-align: center;
       }
       
-      .topnav .search-container button:hover {
+      .search-container button:hover {
         background: #ccc;
       }
       .search-container {
           margin: auto;
-          width: 50%;
-          padding: 10px;
-        }
-      
-      @media screen and (max-width: 600px) {
-        .topnav .search-container {
-          float: none;
-        }
-        .topnav a, .topnav input[type=text], .topnav .search-container button {
-          float: none;
-          display: block;
-          text-align: center;
           width: 100%;
-          margin: 0;
-          padding: 14px;
+          padding: 10px;
+          text-align: center;
+          /*justify-content: center*/
         }
-        .topnav input[type=text] {
-          border: 1px solid #ccc;  
-        }
-        
-        .btn {
-        background-color: Blue;
-        border: none;
-        color: white;
-        padding: 12px 16px;
-        font-size: 16px;
-        cursor: pointer;
-      }
       
-      .btn:hover {
-        background-color: RoyalBlue;
-      }
-      
-      }
       
       /* Footer */
       .footer {
@@ -132,19 +125,19 @@ start block*/
       }
       
       /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-      @media screen and (max-width: 800px) {
+      /*@media screen and (max-width: 800px) {
         .leftcolumn, .rightcolumn {   
           width: 100%;
           padding: 0;
         }
-      }
+      }*/
       
       /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-      @media screen and (max-width: 400px) {
+      /*@media screen and (max-width: 400px) {
         .topnav a {
           float: none;
           width: 100%;
         }
-      }
+      }*/
 /*added by Himani
 end block*/
