@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 ruby '2.4.0'
+gem 'haml'
 gem 'haml-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.10'
@@ -22,6 +23,11 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'loofah', '>=2.2.3'
+
+gem 'omniauth'
+gem 'omniauth-github'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -32,12 +38,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3', '~> 1.3.13'
-  gem 'rspec-rails', '3.7.2'
+  gem 'sqlite3', '1.3.13'
+  gem 'rspec-rails', '~> 3.8'
   gem 'capybara', '2.4.4'
+  gem 'factory_bot_rails'
+  gem 'launchy'
+  gem 'railroady'
+  gem 'ZenTest', '4.11.0'
 
 end
 
