@@ -5,12 +5,12 @@
       %h2 FindGoodFood
       %p The perfect place for hoggers.
     .search-container
-      %form{:action => "search", :method => 'get'} 
+      %form{:action => "search", :method => 'get', :id => 'homeForm'}
         %input{:name => "search_bar", :required => true, :placeholder => "Find Good Food", :type => "text", :value => ""}/
-      %select{:name => "search_type"}
+      %select{:name => "search_type", :form => 'homeForm'}
         %option{:value => "food"} Food
         %option{:value => "restaurant"} Restaurant
-      %input{:type => "submit", :value => "Submit"}/
+      %input{:type => "submit", :value => "Submit", :form => 'homeForm'}/
        
         
         
