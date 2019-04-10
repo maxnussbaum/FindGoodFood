@@ -30,8 +30,6 @@ start block*/
       .header {
         margin-top: 150px;
         text-align: center;
-        /*background: white;*/
-        background-image: url("bgdesert.jpg");
       }
       
       .header h2 {
