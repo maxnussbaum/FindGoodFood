@@ -1,4 +1,3 @@
 class Authorization < ActiveRecord::Base
-    belongs_to :user
-    validates :provider, :uid, :presence => true
+  belongs_to :user
 end
