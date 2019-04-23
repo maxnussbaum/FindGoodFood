@@ -3,6 +3,9 @@ class WelcomeController < ApplicationController
   
   
   def login
+    if !!session[:user_id]
+      redirect_to :home and return
+    end
     @action = 'login'
   end
 end
