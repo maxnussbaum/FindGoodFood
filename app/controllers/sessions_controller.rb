@@ -55,11 +55,11 @@ class SessionsController < ApplicationController
         session[:user_id] = auth.user.id
         self.current_user = auth.user
         flash[:notice] = "#{message}"
-        redirect_to dashboard_index_path and return
+        redirect_to :home and return
       end
     rescue DoubleLoginError, NotCurrentUserError, Exception => exception
       flash[:error] = "#{exception.class}: #{exception.message}"
-      redirect_to dashboard_index_path and return
+      redirect_to :home and return
     end
   end
 

@@ -14,8 +14,13 @@
       #notice.message= flash[:notice]
     - elsif flash[:warning]
       #warning.message= flash[:warning]
-
+  
+    - unless @action == 'login'
+      - if @action == 'home'
+        = render "layouts/homepageProfile"
+      - else
+        = render "layouts/persistentSearchBar"
 
     = yield
-    - unless @action == 'login'
-      = render "layouts/footer"
+    // - unless @action == 'login'
+    //   = render "layouts/footer"

@@ -16,8 +16,7 @@ Rails.application.routes.draw do
   
   resources :users
   
-  get 'dashboard/index'
-  
-  get '/home', :to => 'homepage#home', :as => :home
-  root 'welcome#login'
+  # get '/home', :to => 'homepage#home', :as => :home
+  # root 'welcome#login'
+  root 'homepage#home', :as => :home
 end

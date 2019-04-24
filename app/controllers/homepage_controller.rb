@@ -1,6 +1,9 @@
 class HomepageController < ApplicationController
 
   def home
+    if !session[:user_id]
+      redirect_to welcome_login_path and return
+    end
     
   end
   
